@@ -10,9 +10,9 @@
     <Grid ShowGridLines="True">
         <StackPanel Orientation="Horizontal">
             <StackPanel>
-                <Button x:Name="btnOpenImage" Click="btn_OpenImage_Click">打开Dicom图像</Button>
+                <Button x:Name="btnOpenImage" Click="Btn_OpenImage_Click">打开Dicom图像</Button>
             </StackPanel>
-            <Image></Image>
+            <Image x:Name = "img" MouseLeftButtonDown="Img_LeftButtonDown" MouseMove="Img_MouseMove" MouseLeftButtonUp="Img_LeftButtonUp"></Image>
         </StackPanel>
     </Grid>
 </Window>
