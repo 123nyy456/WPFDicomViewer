@@ -7,12 +7,22 @@
         mc:Ignorable="d"
         Title="Dicom图像浏览器" Height="900" Width="1600">
 
-    <Grid ShowGridLines="True">
-        <StackPanel Orientation="Horizontal">
-            <StackPanel>
-                <Button x:Name="btnOpenImage" Click="Btn_OpenImage_Click">打开Dicom图像</Button>
-            </StackPanel>
-            <Image x:Name = "img" MouseLeftButtonDown="Img_LeftButtonDown" MouseMove="Img_MouseMove" MouseLeftButtonUp="Img_LeftButtonUp"></Image>
+    <DockPanel LastChildFill="True">
+        <StackPanel DockPanel.Dock="Left">
+            <Button x:Name="btnOpenImage" Click="Btn_OpenImage_Click">打开Dicom图像</Button>
         </StackPanel>
-    </Grid>
+        <ListView DockPanel.Dock="Right">
+            <ListView.View>
+                <GridView>
+                    <GridView.Columns>
+                        <GridViewColumn Header="TAG"/>
+                        <GridViewColumn Header="TAG"/>
+                        <GridViewColumn Header="TAG"/>
+                        <GridViewColumn Header="TAG"/>
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Image x:Name = "img" MouseLeftButtonDown="Img_LeftButtonDown" MouseMove="Img_MouseMove" MouseLeftButtonUp="Img_LeftButtonUp"></Image>
+    </DockPanel>
 </Window>
