@@ -29,6 +29,8 @@ namespace DicomViewer
                 win_width = value;
             }
         }
+
+
         public void OpenDcmFile(string file_path)
         {
 

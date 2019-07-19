@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DicomViewer"
         mc:Ignorable="d"
-        Title="Dicom图像浏览器" Height="450" Width="800">
+        Title="Dicom图像浏览器" Height="900" Width="1600">
 
     <Grid ShowGridLines="True">
         <StackPanel Orientation="Horizontal">
